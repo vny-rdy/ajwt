@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Travel Booking System</h1>
+</header>
+
+<nav>
+    <a href="#flights">Flights</a>
+    <a href="#hotels">Hotels</a>
+    <a href="#cars">Car Rentals</a>
+</nav>
+
+<div class="container">
+    <section id="flights">
+        <h2>Book a Flight</h2>
+        <form>
+            <div class="form-group">
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" placeholder="Enter departure city">
+            </div>
+            <div class="form-group">
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" placeholder="Enter destination city">
+            </div>
+            <div class="form-group">
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure-date">
+            </div>
+            <div class="form-group">
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return-date">
+            </div>
+            <div class="form-group">
+                <button type="submit">Search Flights</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="hotels">
+        <h2>Book a Hotel</h2>
+        <form>
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter destination city">
+            </div>
+            <div class="form-group">
+                <label for="check-in-date">Check-in Date:</label>
+                <input type="date" id="check-in-date" name="check-in-date">
+            </div>
+            <div class="form-group">
+                <label for="check-out-date">Check-out Date:</label>
+                <input type="date" id="check-out-date" name="check-out-date">
+            </div>
+            <div class="form-group">
+                <button type="submit">Search Hotels</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="cars">
+        <h2>Rent a Car</h2>
+        <form>
+            <div class="form-group">
+                <label for="pickup-location">Pick-up Location:</label>
+                <input type="text" id="pickup-location" name="pickup-location" placeholder="Enter pick-up location">
+            </div>
+            <div class="form-group">
+                <label for="pickup-date">Pick-up Date:</label>
+                <input type="date" id="pickup-date" name="pickup-date">
+            </div>
+            <div class="form-group">
+                <label for="dropoff-date">Drop-off Date:</label>
+                <input type="date" id="dropoff-date" name="dropoff-date">
+            </div>
+            <div class="form-group">
+                <button type="submit">Search Cars</button>
+            </div>
+        </form>
+    </section>
+</div>
+
+</body>
+</html>
